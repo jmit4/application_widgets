@@ -16,5 +16,6 @@ class AppTheme {
         assert(selectedColor < themeColors.length);
 
   ThemeData getThemeData() =>
-      ThemeData(colorSchemeSeed: themeColors[selectedColor]);
+      ThemeData(colorSchemeSeed: themeColors[selectedColor],
+      appBarTheme: AppBarTheme(centerTitle: false));
 }
